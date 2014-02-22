@@ -16,10 +16,11 @@
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
+    
 	// Do any additional setup after loading the view, typically from a nib.
     self.flowerViewDetail.hidden = YES;
     [self getFlower:nil];
+    [super viewDidLoad];
 }
 
 - (void)didReceiveMemoryWarning
@@ -37,11 +38,13 @@
     int sessionID;
     
     color = [self.colorChoice titleForSegmentAtIndex:self.colorChoice.selectedSegmentIndex];
-    sessionID = random() % 50000;
+    sessionID = 39383;//random() % 50000;
     imageURLString = [[NSString alloc] initWithFormat:@"http://www.floraphotographs.com/showrandomios.php?color=%@&sessionid=%d",color,sessionID];
     detailURLString = [[NSString alloc] initWithFormat:@"http://www.floraphotographs.com/detailios.php?sessionid=%d",sessionID];
+    
+    
     imageURL = [[NSURL alloc] initWithString:imageURLString];
-    detailURL = [[NSURL alloc] initWithString:imageURLString];
+    detailURL = [[NSURL alloc] initWithString:detailURLString];
     [self.flowerView loadRequest:[NSURLRequest requestWithURL:imageURL]];
     [self.flowerViewDetail loadRequest:[NSURLRequest requestWithURL:detailURL]];
     self.flowerViewDetail.backgroundColor = [UIColor clearColor];
