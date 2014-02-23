@@ -21,6 +21,9 @@
 		83F04C9318B9ADFB00377C2E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83F04C7518B9ADFB00377C2E /* UIKit.framework */; };
 		83F04C9B18B9ADFB00377C2E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 83F04C9918B9ADFB00377C2E /* InfoPlist.strings */; };
 		83F04C9D18B9ADFB00377C2E /* GettingAttentionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 83F04C9C18B9ADFB00377C2E /* GettingAttentionTests.m */; };
+		83F04CA918B9AEE700377C2E /* alertsound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 83F04CA718B9AEE700377C2E /* alertsound.wav */; };
+		83F04CAA18B9AEE700377C2E /* soundeffect.wav in Resources */ = {isa = PBXBuildFile; fileRef = 83F04CA818B9AEE700377C2E /* soundeffect.wav */; };
+		83F04CAC18B9CBC400377C2E /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83F04CAB18B9CBC400377C2E /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,9 @@
 		83F04C9818B9ADFB00377C2E /* GettingAttentionTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GettingAttentionTests-Info.plist"; sourceTree = "<group>"; };
 		83F04C9A18B9ADFB00377C2E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		83F04C9C18B9ADFB00377C2E /* GettingAttentionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GettingAttentionTests.m; sourceTree = "<group>"; };
+		83F04CA718B9AEE700377C2E /* alertsound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = alertsound.wav; sourceTree = "<group>"; };
+		83F04CA818B9AEE700377C2E /* soundeffect.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = soundeffect.wav; sourceTree = "<group>"; };
+		83F04CAB18B9CBC400377C2E /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83F04CAC18B9CBC400377C2E /* AudioToolbox.framework in Frameworks */,
 				83F04C7418B9ADFB00377C2E /* CoreGraphics.framework in Frameworks */,
 				83F04C7618B9ADFB00377C2E /* UIKit.framework in Frameworks */,
 				83F04C7218B9ADFB00377C2E /* Foundation.framework in Frameworks */,
@@ -82,6 +89,7 @@
 		83F04C6518B9ADFA00377C2E = {
 			isa = PBXGroup;
 			children = (
+				83F04CA618B9AEE700377C2E /* Sounds */,
 				83F04C7718B9ADFB00377C2E /* GettingAttention */,
 				83F04C9618B9ADFB00377C2E /* GettingAttentionTests */,
 				83F04C7018B9ADFB00377C2E /* Frameworks */,
@@ -101,6 +109,7 @@
 		83F04C7018B9ADFB00377C2E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				83F04CAB18B9CBC400377C2E /* AudioToolbox.framework */,
 				83F04C7118B9ADFB00377C2E /* Foundation.framework */,
 				83F04C7318B9ADFB00377C2E /* CoreGraphics.framework */,
 				83F04C7518B9ADFB00377C2E /* UIKit.framework */,
@@ -150,6 +159,15 @@
 				83F04C9918B9ADFB00377C2E /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		83F04CA618B9AEE700377C2E /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				83F04CA718B9AEE700377C2E /* alertsound.wav */,
+				83F04CA818B9AEE700377C2E /* soundeffect.wav */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,9 +246,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83F04CAA18B9AEE700377C2E /* soundeffect.wav in Resources */,
 				83F04C8A18B9ADFB00377C2E /* Images.xcassets in Resources */,
 				83F04C7C18B9ADFB00377C2E /* InfoPlist.strings in Resources */,
 				83F04C8518B9ADFB00377C2E /* Main.storyboard in Resources */,
+				83F04CA918B9AEE700377C2E /* alertsound.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
