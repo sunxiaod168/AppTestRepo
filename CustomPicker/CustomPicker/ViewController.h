@@ -13,13 +13,7 @@
 @property (strong, nonatomic) IBOutlet UILabel *outputLabel;
 @property (nonatomic) BOOL animalChooserVisible;
 
-
-
-
-
 - (IBAction)showAnimalChooser:(id)sender;
-
-
-
+- (void)displayAnimal:(NSString *)choosenAnimal withSound:(NSString *)choosenSound fromComponent:(NSString *)choosenComponent;
 
 @end

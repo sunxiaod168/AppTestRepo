@@ -53,6 +53,10 @@
     ((ViewController *)self.delegate).animalChooserVisible = NO;
 }
 
+- (void)viewDidAppear:(BOOL)animated{
+    [(ViewController *)self.delegate displayAnimal:[self.animalNames objectAtIndex:0]  withSound:[self.animalSounds objectAtIndex:0] fromComponent:@"nothing yet..."];
+}
+
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView{
     return kComponentCount;
 }
@@ -104,6 +108,20 @@
     }else{
         return 150.0;
     }
+}
+
+- (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
+    ViewController *initialView = (ViewController *)self.delegate;
+    NSString *choosenAnimal, *choosenSound, *choosenComponent;
+    choosenAnimal = [self.animalNames objectAtIndex:[pickerView selectedRowInComponent:kAnimalComponent]];
+    choosenSound = [self.animalSounds objectAtIndex:[pickerView selectedRowInComponent:kSoundComponent]];
+    if (component == kAnimalComponent) {
+        choosenComponent = @"the Animal";
+    }else{
+        choosenComponent = @"the Sound";
+    }
+    [initialView displayAnimal:choosenAnimal withSound:choosenSound fromComponent:choosenComponent];
+    
 }
 
 

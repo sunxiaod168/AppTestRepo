@@ -37,4 +37,9 @@
         self.animalChooserVisible = YES;
     }
 }
+
+- (void)displayAnimal:(NSString *)choosenAnimal withSound:(NSString *)choosenSound fromComponent:(NSString *)choosenComponent{
+    NSString *animalSoundString = [[NSString alloc] initWithFormat:@"You changed %@ (%@ and sound %@)", choosenComponent, choosenAnimal,choosenSound];
+    self.outputLabel.text = animalSoundString;
+}
 @end
