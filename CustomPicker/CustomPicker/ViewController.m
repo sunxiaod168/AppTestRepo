@@ -26,4 +26,15 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    ((AnimalChooserViewController *)segue.destinationViewController).delegate = self;
+    
+}
+
+- (IBAction)showAnimalChooser:(id)sender {
+    if (self.animalChooserVisible != YES) {
+        [self performSegueWithIdentifier:@"toAnimalChooser" sender:sender];
+        self.animalChooserVisible = YES;
+    }
+}
 @end

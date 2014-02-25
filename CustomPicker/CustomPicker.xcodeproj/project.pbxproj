@@ -21,6 +21,14 @@
 		830CBC5218BC63F300356EFD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 830CBC3418BC63F300356EFD /* UIKit.framework */; };
 		830CBC5A18BC63F300356EFD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 830CBC5818BC63F300356EFD /* InfoPlist.strings */; };
 		830CBC5C18BC63F300356EFD /* CustomPickerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 830CBC5B18BC63F300356EFD /* CustomPickerTests.m */; };
+		830CBC6D18BC649100356EFD /* bear.png in Resources */ = {isa = PBXBuildFile; fileRef = 830CBC6618BC649100356EFD /* bear.png */; };
+		830CBC6E18BC649100356EFD /* cat.png in Resources */ = {isa = PBXBuildFile; fileRef = 830CBC6718BC649100356EFD /* cat.png */; };
+		830CBC6F18BC649100356EFD /* dog.png in Resources */ = {isa = PBXBuildFile; fileRef = 830CBC6818BC649100356EFD /* dog.png */; };
+		830CBC7018BC649100356EFD /* goose.png in Resources */ = {isa = PBXBuildFile; fileRef = 830CBC6918BC649100356EFD /* goose.png */; };
+		830CBC7118BC649100356EFD /* mouse.png in Resources */ = {isa = PBXBuildFile; fileRef = 830CBC6A18BC649100356EFD /* mouse.png */; };
+		830CBC7218BC649100356EFD /* pig.png in Resources */ = {isa = PBXBuildFile; fileRef = 830CBC6B18BC649100356EFD /* pig.png */; };
+		830CBC7318BC649100356EFD /* snake.png in Resources */ = {isa = PBXBuildFile; fileRef = 830CBC6C18BC649100356EFD /* snake.png */; };
+		830CBC7618BC653400356EFD /* AnimalChooserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 830CBC7518BC653400356EFD /* AnimalChooserViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +61,15 @@
 		830CBC5718BC63F300356EFD /* CustomPickerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CustomPickerTests-Info.plist"; sourceTree = "<group>"; };
 		830CBC5918BC63F300356EFD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		830CBC5B18BC63F300356EFD /* CustomPickerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomPickerTests.m; sourceTree = "<group>"; };
+		830CBC6618BC649100356EFD /* bear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bear.png; sourceTree = "<group>"; };
+		830CBC6718BC649100356EFD /* cat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cat.png; sourceTree = "<group>"; };
+		830CBC6818BC649100356EFD /* dog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dog.png; sourceTree = "<group>"; };
+		830CBC6918BC649100356EFD /* goose.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = goose.png; sourceTree = "<group>"; };
+		830CBC6A18BC649100356EFD /* mouse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mouse.png; sourceTree = "<group>"; };
+		830CBC6B18BC649100356EFD /* pig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pig.png; sourceTree = "<group>"; };
+		830CBC6C18BC649100356EFD /* snake.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = snake.png; sourceTree = "<group>"; };
+		830CBC7418BC653400356EFD /* AnimalChooserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimalChooserViewController.h; sourceTree = "<group>"; };
+		830CBC7518BC653400356EFD /* AnimalChooserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimalChooserViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +129,7 @@
 		830CBC3618BC63F300356EFD /* CustomPicker */ = {
 			isa = PBXGroup;
 			children = (
+				830CBC6518BC649100356EFD /* Images */,
 				830CBC3F18BC63F300356EFD /* AppDelegate.h */,
 				830CBC4018BC63F300356EFD /* AppDelegate.m */,
 				830CBC4218BC63F300356EFD /* Main.storyboard */,
@@ -119,6 +137,8 @@
 				830CBC4618BC63F300356EFD /* ViewController.m */,
 				830CBC4818BC63F300356EFD /* Images.xcassets */,
 				830CBC3718BC63F300356EFD /* Supporting Files */,
+				830CBC7418BC653400356EFD /* AnimalChooserViewController.h */,
+				830CBC7518BC653400356EFD /* AnimalChooserViewController.m */,
 			);
 			path = CustomPicker;
 			sourceTree = "<group>";
@@ -150,6 +170,20 @@
 				830CBC5818BC63F300356EFD /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		830CBC6518BC649100356EFD /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				830CBC6618BC649100356EFD /* bear.png */,
+				830CBC6718BC649100356EFD /* cat.png */,
+				830CBC6818BC649100356EFD /* dog.png */,
+				830CBC6918BC649100356EFD /* goose.png */,
+				830CBC6A18BC649100356EFD /* mouse.png */,
+				830CBC6B18BC649100356EFD /* pig.png */,
+				830CBC6C18BC649100356EFD /* snake.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,7 +262,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				830CBC6F18BC649100356EFD /* dog.png in Resources */,
+				830CBC6E18BC649100356EFD /* cat.png in Resources */,
+				830CBC7318BC649100356EFD /* snake.png in Resources */,
+				830CBC7018BC649100356EFD /* goose.png in Resources */,
+				830CBC7218BC649100356EFD /* pig.png in Resources */,
 				830CBC4918BC63F300356EFD /* Images.xcassets in Resources */,
+				830CBC6D18BC649100356EFD /* bear.png in Resources */,
+				830CBC7118BC649100356EFD /* mouse.png in Resources */,
 				830CBC3B18BC63F300356EFD /* InfoPlist.strings in Resources */,
 				830CBC4418BC63F300356EFD /* Main.storyboard in Resources */,
 			);
@@ -249,6 +290,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				830CBC7618BC653400356EFD /* AnimalChooserViewController.m in Sources */,
 				830CBC4718BC63F300356EFD /* ViewController.m in Sources */,
 				830CBC4118BC63F300356EFD /* AppDelegate.m in Sources */,
 				830CBC3D18BC63F300356EFD /* main.m in Sources */,
@@ -383,6 +425,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CustomPicker/CustomPicker-Prefix.pch";
 				INFOPLIST_FILE = "CustomPicker/CustomPicker-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -396,6 +439,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CustomPicker/CustomPicker-Prefix.pch";
 				INFOPLIST_FILE = "CustomPicker/CustomPicker-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -462,6 +506,7 @@
 				830CBC6118BC63F300356EFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		830CBC6218BC63F300356EFD /* Build configuration list for PBXNativeTarget "CustomPickerTests" */ = {
 			isa = XCConfigurationList;
@@ -470,6 +515,7 @@
 				830CBC6418BC63F300356EFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

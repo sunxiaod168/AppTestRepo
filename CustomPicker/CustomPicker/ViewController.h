@@ -7,7 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AnimalChooserViewController.h"
 
 @interface ViewController : UIViewController
+@property (strong, nonatomic) IBOutlet UILabel *outputLabel;
+@property (nonatomic) BOOL animalChooserVisible;
+
+
+
+
+
+- (IBAction)showAnimalChooser:(id)sender;
+
+
+
 
 @end
