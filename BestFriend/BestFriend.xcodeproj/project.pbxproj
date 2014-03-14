@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8317685018D3194D00C62820 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8317684F18D3194D00C62820 /* Social.framework */; };
 		83497EE818D1A38600CB3FDB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83497EE718D1A38600CB3FDB /* Foundation.framework */; };
 		83497EEA18D1A38600CB3FDB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83497EE918D1A38600CB3FDB /* CoreGraphics.framework */; };
 		83497EEC18D1A38600CB3FDB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83497EEB18D1A38600CB3FDB /* UIKit.framework */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8317684F18D3194D00C62820 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		83497EE418D1A38600CB3FDB /* BestFriend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BestFriend.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83497EE718D1A38600CB3FDB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		83497EE918D1A38600CB3FDB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -72,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8317685018D3194D00C62820 /* Social.framework in Frameworks */,
 				83497F2718D1A3F800CB3FDB /* Twitter.framework in Frameworks */,
 				83497F2518D1A3E700CB3FDB /* MessageUI.framework in Frameworks */,
 				83497F2318D1A3D900CB3FDB /* CoreLocation.framework in Frameworks */,
@@ -119,6 +122,7 @@
 		83497EE618D1A38600CB3FDB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8317684F18D3194D00C62820 /* Social.framework */,
 				83497F2618D1A3F800CB3FDB /* Twitter.framework */,
 				83497F2418D1A3E700CB3FDB /* MessageUI.framework */,
 				83497F2218D1A3D900CB3FDB /* CoreLocation.framework */,
@@ -484,6 +488,7 @@
 				83497F1818D1A38600CB3FDB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		83497F1918D1A38600CB3FDB /* Build configuration list for PBXNativeTarget "BestFriendTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +497,7 @@
 				83497F1B18D1A38600CB3FDB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
