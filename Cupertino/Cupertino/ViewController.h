@@ -15,7 +15,10 @@
 @property (strong, nonatomic) IBOutlet UIView *distanceView;
 @property (strong, nonatomic) IBOutlet UIView *waitView;
 @property (strong, nonatomic) CLLocationManager *locMan;
+@property (strong, nonatomic) IBOutlet UIImageView *directionArrow;
+@property (strong, nonatomic) CLLocation *recentLocation;
 
+- (double)headingToLocation:(CLLocationCoordinate2D)desired current:(CLLocationCoordinate2D)current;
 
 
 
