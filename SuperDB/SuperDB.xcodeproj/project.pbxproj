@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		83240F881928B970003A2A88 /* tabbaricon01@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83240F861928B970003A2A88 /* tabbaricon01@2x.png */; };
+		83240F891928B970003A2A88 /* tabbaricon02@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83240F871928B970003A2A88 /* tabbaricon02@2x.png */; };
+		83ACA35C192508A300FBB2F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ACA35B192508A300FBB2F7 /* Foundation.framework */; };
+		83ACA35E192508A300FBB2F7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ACA35D192508A300FBB2F7 /* CoreGraphics.framework */; };
+		83ACA360192508A300FBB2F7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ACA35F192508A300FBB2F7 /* UIKit.framework */; };
+		83ACA362192508A300FBB2F7 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ACA361192508A300FBB2F7 /* CoreData.framework */; };
+		83ACA368192508A300FBB2F7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 83ACA366192508A300FBB2F7 /* InfoPlist.strings */; };
+		83ACA36A192508A300FBB2F7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 83ACA369192508A300FBB2F7 /* main.m */; };
+		83ACA36E192508A300FBB2F7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 83ACA36D192508A300FBB2F7 /* AppDelegate.m */; };
+		83ACA371192508A400FBB2F7 /* SuperDB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 83ACA36F192508A400FBB2F7 /* SuperDB.xcdatamodeld */; };
+		83ACA373192508A400FBB2F7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83ACA372192508A400FBB2F7 /* Images.xcassets */; };
+		83ACA37A192508A400FBB2F7 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ACA379192508A400FBB2F7 /* XCTest.framework */; };
+		83ACA37B192508A400FBB2F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ACA35B192508A300FBB2F7 /* Foundation.framework */; };
+		83ACA37C192508A400FBB2F7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ACA35F192508A300FBB2F7 /* UIKit.framework */; };
+		83ACA37D192508A400FBB2F7 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ACA361192508A300FBB2F7 /* CoreData.framework */; };
+		83ACA385192508A400FBB2F7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 83ACA383192508A400FBB2F7 /* InfoPlist.strings */; };
+		83ACA387192508A400FBB2F7 /* SuperDBTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 83ACA386192508A400FBB2F7 /* SuperDBTests.m */; };
+		83ACA39119250DA500FBB2F7 /* SuperDB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83ACA39019250DA500FBB2F7 /* SuperDB.storyboard */; };
+		83B7FE3C1925EC7C00291CB5 /* HeroListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83B7FE3B1925EC7C00291CB5 /* HeroListController.m */; };
+		83CED33A192866F700F547E7 /* tabbaricon01.png in Resources */ = {isa = PBXBuildFile; fileRef = 83CED338192866F700F547E7 /* tabbaricon01.png */; };
+		83CED33B192866F700F547E7 /* tabbaricon02.png in Resources */ = {isa = PBXBuildFile; fileRef = 83CED339192866F700F547E7 /* tabbaricon02.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		83ACA37E192508A400FBB2F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83ACA350192508A300FBB2F7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83ACA357192508A300FBB2F7;
+			remoteInfo = SuperDB;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		83240F861928B970003A2A88 /* tabbaricon01@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbaricon01@2x.png"; sourceTree = "<group>"; };
+		83240F871928B970003A2A88 /* tabbaricon02@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbaricon02@2x.png"; sourceTree = "<group>"; };
+		83ACA358192508A300FBB2F7 /* SuperDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		83ACA35B192508A300FBB2F7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		83ACA35D192508A300FBB2F7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		83ACA35F192508A300FBB2F7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		83ACA361192508A300FBB2F7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		83ACA365192508A300FBB2F7 /* SuperDB-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SuperDB-Info.plist"; sourceTree = "<group>"; };
+		83ACA367192508A300FBB2F7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		83ACA369192508A300FBB2F7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		83ACA36B192508A300FBB2F7 /* SuperDB-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SuperDB-Prefix.pch"; sourceTree = "<group>"; };
+		83ACA36C192508A300FBB2F7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		83ACA36D192508A300FBB2F7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		83ACA370192508A400FBB2F7 /* SuperDB.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SuperDB.xcdatamodel; sourceTree = "<group>"; };
+		83ACA372192508A400FBB2F7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		83ACA378192508A400FBB2F7 /* SuperDBTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SuperDBTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		83ACA379192508A400FBB2F7 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		83ACA382192508A400FBB2F7 /* SuperDBTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SuperDBTests-Info.plist"; sourceTree = "<group>"; };
+		83ACA384192508A400FBB2F7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		83ACA386192508A400FBB2F7 /* SuperDBTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuperDBTests.m; sourceTree = "<group>"; };
+		83ACA39019250DA500FBB2F7 /* SuperDB.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SuperDB.storyboard; sourceTree = "<group>"; };
+		83B7FE3A1925EC7C00291CB5 /* HeroListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeroListController.h; sourceTree = "<group>"; };
+		83B7FE3B1925EC7C00291CB5 /* HeroListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeroListController.m; sourceTree = "<group>"; };
+		83CED338192866F700F547E7 /* tabbaricon01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabbaricon01.png; sourceTree = "<group>"; };
+		83CED339192866F700F547E7 /* tabbaricon02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabbaricon02.png; sourceTree = "<group>"; };
+		83E421DC192A6AF700E62F8C /* SuperDB 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "SuperDB 2.xcdatamodel"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		83ACA355192508A300FBB2F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83ACA35E192508A300FBB2F7 /* CoreGraphics.framework in Frameworks */,
+				83ACA362192508A300FBB2F7 /* CoreData.framework in Frameworks */,
+				83ACA360192508A300FBB2F7 /* UIKit.framework in Frameworks */,
+				83ACA35C192508A300FBB2F7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83ACA375192508A400FBB2F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83ACA37A192508A400FBB2F7 /* XCTest.framework in Frameworks */,
+				83ACA37D192508A400FBB2F7 /* CoreData.framework in Frameworks */,
+				83ACA37C192508A400FBB2F7 /* UIKit.framework in Frameworks */,
+				83ACA37B192508A400FBB2F7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		83ACA34F192508A300FBB2F7 = {
+			isa = PBXGroup;
+			children = (
+				83ACA363192508A300FBB2F7 /* SuperDB */,
+				83ACA380192508A400FBB2F7 /* SuperDBTests */,
+				83ACA35A192508A300FBB2F7 /* Frameworks */,
+				83ACA359192508A300FBB2F7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		83ACA359192508A300FBB2F7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				83ACA358192508A300FBB2F7 /* SuperDB.app */,
+				83ACA378192508A400FBB2F7 /* SuperDBTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		83ACA35A192508A300FBB2F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				83ACA35B192508A300FBB2F7 /* Foundation.framework */,
+				83ACA35D192508A300FBB2F7 /* CoreGraphics.framework */,
+				83ACA35F192508A300FBB2F7 /* UIKit.framework */,
+				83ACA361192508A300FBB2F7 /* CoreData.framework */,
+				83ACA379192508A400FBB2F7 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		83ACA363192508A300FBB2F7 /* SuperDB */ = {
+			isa = PBXGroup;
+			children = (
+				83ACA36C192508A300FBB2F7 /* AppDelegate.h */,
+				83ACA36D192508A300FBB2F7 /* AppDelegate.m */,
+				83B7FE3A1925EC7C00291CB5 /* HeroListController.h */,
+				83B7FE3B1925EC7C00291CB5 /* HeroListController.m */,
+				83ACA372192508A400FBB2F7 /* Images.xcassets */,
+				83ACA39019250DA500FBB2F7 /* SuperDB.storyboard */,
+				83ACA36F192508A400FBB2F7 /* SuperDB.xcdatamodeld */,
+				83ACA364192508A300FBB2F7 /* Supporting Files */,
+				83CED338192866F700F547E7 /* tabbaricon01.png */,
+				83240F861928B970003A2A88 /* tabbaricon01@2x.png */,
+				83CED339192866F700F547E7 /* tabbaricon02.png */,
+				83240F871928B970003A2A88 /* tabbaricon02@2x.png */,
+			);
+			path = SuperDB;
+			sourceTree = "<group>";
+		};
+		83ACA364192508A300FBB2F7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				83ACA365192508A300FBB2F7 /* SuperDB-Info.plist */,
+				83ACA366192508A300FBB2F7 /* InfoPlist.strings */,
+				83ACA369192508A300FBB2F7 /* main.m */,
+				83ACA36B192508A300FBB2F7 /* SuperDB-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		83ACA380192508A400FBB2F7 /* SuperDBTests */ = {
+			isa = PBXGroup;
+			children = (
+				83ACA386192508A400FBB2F7 /* SuperDBTests.m */,
+				83ACA381192508A400FBB2F7 /* Supporting Files */,
+			);
+			path = SuperDBTests;
+			sourceTree = "<group>";
+		};
+		83ACA381192508A400FBB2F7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				83ACA382192508A400FBB2F7 /* SuperDBTests-Info.plist */,
+				83ACA383192508A400FBB2F7 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		83ACA357192508A300FBB2F7 /* SuperDB */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83ACA38A192508A400FBB2F7 /* Build configuration list for PBXNativeTarget "SuperDB" */;
+			buildPhases = (
+				83ACA354192508A300FBB2F7 /* Sources */,
+				83ACA355192508A300FBB2F7 /* Frameworks */,
+				83ACA356192508A300FBB2F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SuperDB;
+			productName = SuperDB;
+			productReference = 83ACA358192508A300FBB2F7 /* SuperDB.app */;
+			productType = "com.apple.product-type.application";
+		};
+		83ACA377192508A400FBB2F7 /* SuperDBTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83ACA38D192508A400FBB2F7 /* Build configuration list for PBXNativeTarget "SuperDBTests" */;
+			buildPhases = (
+				83ACA374192508A400FBB2F7 /* Sources */,
+				83ACA375192508A400FBB2F7 /* Frameworks */,
+				83ACA376192508A400FBB2F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				83ACA37F192508A400FBB2F7 /* PBXTargetDependency */,
+			);
+			name = SuperDBTests;
+			productName = SuperDBTests;
+			productReference = 83ACA378192508A400FBB2F7 /* SuperDBTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83ACA350192508A300FBB2F7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Jack Sun";
+				TargetAttributes = {
+					83ACA377192508A400FBB2F7 = {
+						TestTargetID = 83ACA357192508A300FBB2F7;
+					};
+				};
+			};
+			buildConfigurationList = 83ACA353192508A300FBB2F7 /* Build configuration list for PBXProject "SuperDB" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 83ACA34F192508A300FBB2F7;
+			productRefGroup = 83ACA359192508A300FBB2F7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				83ACA357192508A300FBB2F7 /* SuperDB */,
+				83ACA377192508A400FBB2F7 /* SuperDBTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		83ACA356192508A300FBB2F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83240F881928B970003A2A88 /* tabbaricon01@2x.png in Resources */,
+				83ACA39119250DA500FBB2F7 /* SuperDB.storyboard in Resources */,
+				83CED33A192866F700F547E7 /* tabbaricon01.png in Resources */,
+				83ACA368192508A300FBB2F7 /* InfoPlist.strings in Resources */,
+				83240F891928B970003A2A88 /* tabbaricon02@2x.png in Resources */,
+				83CED33B192866F700F547E7 /* tabbaricon02.png in Resources */,
+				83ACA373192508A400FBB2F7 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83ACA376192508A400FBB2F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83ACA385192508A400FBB2F7 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		83ACA354192508A300FBB2F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83ACA371192508A400FBB2F7 /* SuperDB.xcdatamodeld in Sources */,
+				83ACA36E192508A300FBB2F7 /* AppDelegate.m in Sources */,
+				83ACA36A192508A300FBB2F7 /* main.m in Sources */,
+				83B7FE3C1925EC7C00291CB5 /* HeroListController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83ACA374192508A400FBB2F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83ACA387192508A400FBB2F7 /* SuperDBTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		83ACA37F192508A400FBB2F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83ACA357192508A300FBB2F7 /* SuperDB */;
+			targetProxy = 83ACA37E192508A400FBB2F7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		83ACA366192508A300FBB2F7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83ACA367192508A300FBB2F7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		83ACA383192508A400FBB2F7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83ACA384192508A400FBB2F7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		83ACA388192508A400FBB2F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		83ACA389192508A400FBB2F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		83ACA38B192508A400FBB2F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SuperDB/SuperDB-Prefix.pch";
+				INFOPLIST_FILE = "SuperDB/SuperDB-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		83ACA38C192508A400FBB2F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SuperDB/SuperDB-Prefix.pch";
+				INFOPLIST_FILE = "SuperDB/SuperDB-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		83ACA38E192508A400FBB2F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SuperDB.app/SuperDB";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SuperDB/SuperDB-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SuperDBTests/SuperDBTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		83ACA38F192508A400FBB2F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SuperDB.app/SuperDB";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SuperDB/SuperDB-Prefix.pch";
+				INFOPLIST_FILE = "SuperDBTests/SuperDBTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		83ACA353192508A300FBB2F7 /* Build configuration list for PBXProject "SuperDB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83ACA388192508A400FBB2F7 /* Debug */,
+				83ACA389192508A400FBB2F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83ACA38A192508A400FBB2F7 /* Build configuration list for PBXNativeTarget "SuperDB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83ACA38B192508A400FBB2F7 /* Debug */,
+				83ACA38C192508A400FBB2F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83ACA38D192508A400FBB2F7 /* Build configuration list for PBXNativeTarget "SuperDBTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83ACA38E192508A400FBB2F7 /* Debug */,
+				83ACA38F192508A400FBB2F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		83ACA36F192508A400FBB2F7 /* SuperDB.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				83E421DC192A6AF700E62F8C /* SuperDB 2.xcdatamodel */,
+				83ACA370192508A400FBB2F7 /* SuperDB.xcdatamodel */,
+			);
+			currentVersion = 83ACA370192508A400FBB2F7 /* SuperDB.xcdatamodel */;
+			path = SuperDB.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 83ACA350192508A300FBB2F7 /* Project object */;
+}

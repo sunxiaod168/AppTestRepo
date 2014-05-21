@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		83A57F6318D6E8D400446929 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83A57F6218D6E8D400446929 /* AudioToolbox.framework */; };
+		83A57F6818D6E92300446929 /* left.wav in Resources */ = {isa = PBXBuildFile; fileRef = 83A57F6518D6E92300446929 /* left.wav */; };
+		83A57F6918D6E92300446929 /* right.wav in Resources */ = {isa = PBXBuildFile; fileRef = 83A57F6618D6E92300446929 /* right.wav */; };
+		83A57F6A18D6E92300446929 /* straight.wav in Resources */ = {isa = PBXBuildFile; fileRef = 83A57F6718D6E92300446929 /* straight.wav */; };
 		83C6F14718D553320059EDB1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83C6F14618D553320059EDB1 /* Foundation.framework */; };
 		83C6F14918D553320059EDB1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83C6F14818D553320059EDB1 /* CoreGraphics.framework */; };
 		83C6F14B18D553320059EDB1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83C6F14A18D553320059EDB1 /* UIKit.framework */; };
@@ -40,6 +44,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		83A57F6218D6E8D400446929 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		83A57F6518D6E92300446929 /* left.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = left.wav; sourceTree = "<group>"; };
+		83A57F6618D6E92300446929 /* right.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = right.wav; sourceTree = "<group>"; };
+		83A57F6718D6E92300446929 /* straight.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = straight.wav; sourceTree = "<group>"; };
 		83C6F14318D553320059EDB1 /* Cupertino.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cupertino.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83C6F14618D553320059EDB1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		83C6F14818D553320059EDB1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -72,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83A57F6318D6E8D400446929 /* AudioToolbox.framework in Frameworks */,
 				83C6F17C18D553610059EDB1 /* CoreLocation.framework in Frameworks */,
 				83C6F14918D553320059EDB1 /* CoreGraphics.framework in Frameworks */,
 				83C6F14B18D553320059EDB1 /* UIKit.framework in Frameworks */,
@@ -92,6 +101,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		83A57F6418D6E92300446929 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				83A57F6518D6E92300446929 /* left.wav */,
+				83A57F6618D6E92300446929 /* right.wav */,
+				83A57F6718D6E92300446929 /* straight.wav */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
 		83C6F13A18D553320059EDB1 = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +133,7 @@
 		83C6F14518D553320059EDB1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				83A57F6218D6E8D400446929 /* AudioToolbox.framework */,
 				83C6F17B18D553610059EDB1 /* CoreLocation.framework */,
 				83C6F14618D553320059EDB1 /* Foundation.framework */,
 				83C6F14818D553320059EDB1 /* CoreGraphics.framework */,
@@ -126,6 +146,7 @@
 		83C6F14C18D553320059EDB1 /* Cupertino */ = {
 			isa = PBXGroup;
 			children = (
+				83A57F6418D6E92300446929 /* Audio */,
 				83C6F17D18D554290059EDB1 /* Images */,
 				83C6F15518D553320059EDB1 /* AppDelegate.h */,
 				83C6F15618D553320059EDB1 /* AppDelegate.m */,
@@ -255,12 +276,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83A57F6A18D6E92300446929 /* straight.wav in Resources */,
 				83C6F18518D554290059EDB1 /* left_arrow.png in Resources */,
+				83A57F6918D6E92300446929 /* right.wav in Resources */,
 				83C6F15F18D553320059EDB1 /* Images.xcassets in Resources */,
 				83C6F18418D554290059EDB1 /* apple@2x.png in Resources */,
 				83C6F15118D553320059EDB1 /* InfoPlist.strings in Resources */,
 				83C6F18318D554290059EDB1 /* apple.png in Resources */,
 				83C6F18618D554290059EDB1 /* right_arrow.png in Resources */,
+				83A57F6818D6E92300446929 /* left.wav in Resources */,
 				83C6F18718D554290059EDB1 /* up_arrow.png in Resources */,
 				83C6F15A18D553320059EDB1 /* Main.storyboard in Resources */,
 			);
@@ -411,7 +435,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Cupertino/Cupertino-Prefix.pch";
 				INFOPLIST_FILE = "Cupertino/Cupertino-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
@@ -426,7 +450,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Cupertino/Cupertino-Prefix.pch";
 				INFOPLIST_FILE = "Cupertino/Cupertino-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
@@ -492,6 +516,7 @@
 				83C6F17718D553320059EDB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		83C6F17818D553320059EDB1 /* Build configuration list for PBXNativeTarget "CupertinoTests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +525,7 @@
 				83C6F17A18D553320059EDB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

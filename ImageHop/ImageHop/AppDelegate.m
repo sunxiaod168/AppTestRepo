@@ -31,6 +31,9 @@
 - (void)applicationWillEnterForeground:(UIApplication *)application
 {
     // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+    UIAlertView *alertDialogue;
+    alertDialogue = [[UIAlertView alloc] initWithTitle:@"Yawm!" message:@"Was I asleep?" delegate:nil cancelButtonTitle:@"Welcome Back" otherButtonTitles:nil];
+    [alertDialogue show];
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application

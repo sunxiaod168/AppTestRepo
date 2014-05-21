@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8306B4B918F8F03E0098B715 /* MyProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 8306B4B818F8F03E0098B715 /* MyProfile.m */; };
 		83917C4918B5A2CA00DCB5D6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83917C4818B5A2CA00DCB5D6 /* Foundation.framework */; };
 		83917C4B18B5A2CA00DCB5D6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83917C4A18B5A2CA00DCB5D6 /* CoreGraphics.framework */; };
 		83917C4D18B5A2CA00DCB5D6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83917C4C18B5A2CA00DCB5D6 /* UIKit.framework */; };
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8306B4B718F8F03E0098B715 /* MyProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyProfile.h; sourceTree = "<group>"; };
+		8306B4B818F8F03E0098B715 /* MyProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyProfile.m; sourceTree = "<group>"; };
 		83917C4518B5A2CA00DCB5D6 /* HelloNoun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloNoun.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83917C4818B5A2CA00DCB5D6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		83917C4A18B5A2CA00DCB5D6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -117,6 +120,8 @@
 				83917C5A18B5A2CA00DCB5D6 /* Main.storyboard */,
 				83917C5D18B5A2CA00DCB5D6 /* ViewController.h */,
 				83917C5E18B5A2CA00DCB5D6 /* ViewController.m */,
+				8306B4B718F8F03E0098B715 /* MyProfile.h */,
+				8306B4B818F8F03E0098B715 /* MyProfile.m */,
 				83917C6018B5A2CA00DCB5D6 /* Images.xcassets */,
 				83917C4F18B5A2CA00DCB5D6 /* Supporting Files */,
 			);
@@ -250,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				83917C5F18B5A2CA00DCB5D6 /* ViewController.m in Sources */,
+				8306B4B918F8F03E0098B715 /* MyProfile.m in Sources */,
 				83917C5918B5A2CA00DCB5D6 /* AppDelegate.m in Sources */,
 				83917C5518B5A2CA00DCB5D6 /* main.m in Sources */,
 			);
@@ -381,7 +387,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HelloNoun/HelloNoun-Prefix.pch";
 				INFOPLIST_FILE = "HelloNoun/HelloNoun-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -394,7 +402,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HelloNoun/HelloNoun-Prefix.pch";
 				INFOPLIST_FILE = "HelloNoun/HelloNoun-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -460,6 +470,7 @@
 				83917C7918B5A2CA00DCB5D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		83917C7A18B5A2CA00DCB5D6 /* Build configuration list for PBXNativeTarget "HelloNounTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +479,7 @@
 				83917C7C18B5A2CA00DCB5D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

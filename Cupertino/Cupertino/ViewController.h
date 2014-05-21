@@ -8,8 +8,15 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreLocation/CoreLocation.h>
+#import <AudioToolbox/AudioToolbox.h>
 
 @interface ViewController : UIViewController <CLLocationManagerDelegate>
+{
+    SystemSoundID soundStraight;
+    SystemSoundID soundLeft;
+    SystemSoundID soundRight;
+    int lastSound;
+}
 
 @property (strong, nonatomic) IBOutlet UILabel *distanceLabel;
 @property (strong, nonatomic) IBOutlet UIView *distanceView;
@@ -19,7 +26,5 @@
 @property (strong, nonatomic) CLLocation *recentLocation;
 
 - (double)headingToLocation:(CLLocationCoordinate2D)desired current:(CLLocationCoordinate2D)current;
-
-
 
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "MyProfile.h"
 
 @interface ViewController ()
 
@@ -18,6 +19,10 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    MyProfile *me = [[MyProfile alloc] init];
+    NSString *name;
+    me.myName = @"sxd";
+    name = me.myName;
 }
 
 - (void)didReceiveMemoryWarning
@@ -34,4 +39,5 @@
 - (IBAction)done:(id)sender {
    self.userOutput.text = self.userInput.text;
 }
+
 @end

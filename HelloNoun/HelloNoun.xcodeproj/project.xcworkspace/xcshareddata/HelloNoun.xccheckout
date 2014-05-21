@@ -5,19 +5,19 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>22C96B52-F21E-4DA6-94C7-B524CE38617A</string>
+	<string>62459F29-32E7-462E-8802-A6D403CE845A</string>
 	<key>IDESourceControlProjectName</key>
 	<string>HelloNoun</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>7AB94FA1-A6D9-4D4B-8ACC-CB500D306059</key>
+		<key>AF7A419F-1DB5-4071-BD3C-D0D18E04B863</key>
 		<string>https://github.com/sunxiaod168/AppTestRepo.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>HelloNoun/HelloNoun.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>7AB94FA1-A6D9-4D4B-8ACC-CB500D306059</key>
+		<key>AF7A419F-1DB5-4071-BD3C-D0D18E04B863</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -25,14 +25,14 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>7AB94FA1-A6D9-4D4B-8ACC-CB500D306059</string>
+	<string>AF7A419F-1DB5-4071-BD3C-D0D18E04B863</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>7AB94FA1-A6D9-4D4B-8ACC-CB500D306059</string>
+			<string>AF7A419F-1DB5-4071-BD3C-D0D18E04B863</string>
 			<key>IDESourceControlWCCName</key>
 			<string>AppTestRepo</string>
 		</dict>

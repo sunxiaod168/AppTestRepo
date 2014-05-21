@@ -11,6 +11,9 @@
 #define kCupertinoLongitude -122.0321823
 #define kDeg2Rad 0.0174532529
 #define kRad2Deg 57.2957795
+#define kStraight 1
+#define kRight 2
+#define kLeft 3
 
 @interface ViewController ()
 
@@ -22,6 +25,15 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    NSString *soundFile;
+    soundFile = [[NSBundle mainBundle] pathForResource:@"straight" ofType:@"wav"];
+    AudioServicesCreateSystemSoundID((__bridge CFURLRef)[NSURL fileURLWithPath:soundFile], &soundStraight);
+    soundFile = [[NSBundle mainBundle] pathForResource:@"right" ofType:@"wav"];
+    AudioServicesCreateSystemSoundID((__bridge CFURLRef)[NSURL fileURLWithPath:soundFile], &soundRight);
+    soundFile = [[NSBundle mainBundle] pathForResource:@"left" ofType:@"wav"];
+    AudioServicesCreateSystemSoundID((__bridge CFURLRef)[NSURL fileURLWithPath:soundFile], &soundLeft);
+    lastSound = 0;
+    
     self.locMan = [[CLLocationManager alloc] init];
     self.locMan.delegate = self;
     self.locMan.desiredAccuracy = kCLLocationAccuracyThreeKilometers;
@@ -71,15 +83,35 @@
         double delta = newHeading.trueHeading - course;
         if (abs(delta) <= 10) {
             self.directionArrow.image = [UIImage imageNamed:@"up_arrow.png"];
+            if (lastSound != kStraight) {
+                AudioServicesPlaySystemSound(soundStraight);
+                lastSound = kStraight;
+            }
         }else{
             if (abs(delta) > 180) {
                 self.directionArrow.image = [UIImage imageNamed:@"right_arrow.png"];
+                if (lastSound != kRight) {
+                    AudioServicesPlaySystemSound(soundRight);
+                    lastSound = kRight;
+                }
             }else if(delta > 0){
                 self.directionArrow.image = [UIImage imageNamed:@"left_arrow.png"];
+                if (lastSound != kLeft) {
+                    AudioServicesPlaySystemSound(soundLeft);
+                    lastSound = kLeft;
+                }
             }else if(delta > -180){
                 self.directionArrow.image = [UIImage imageNamed:@"right_arrow.png"];
+                if (lastSound != kRight) {
+                    AudioServicesPlaySystemSound(soundRight);
+                    lastSound = kRight;
+                }
             }else{
                 self.directionArrow.image = [UIImage imageNamed:@"left_arrow.png"];
+                if (lastSound != kLeft) {
+                    AudioServicesPlaySystemSound(soundLeft);
+                    lastSound = kLeft;
+                }
             }
         }
         self.directionArrow.hidden = NO;

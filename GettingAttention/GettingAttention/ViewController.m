@@ -28,8 +28,22 @@
 
 - (IBAction)doAlert:(id)sender {
     UIAlertView *alertDialog;
+    UILocalNotification *scheduleAlert;
+    
     alertDialog = [[UIAlertView alloc] initWithTitle:@"Alert Button Selected" message:@"I need your attention now!" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil , nil];
     [alertDialog show];
+    
+    [[UIApplication sharedApplication] cancelAllLocalNotifications];
+    scheduleAlert = [[UILocalNotification alloc] init];
+    scheduleAlert.applicationIconBadgeNumber = 1;
+    scheduleAlert.fireDate = [NSDate dateWithTimeIntervalSinceNow:10];
+    scheduleAlert.timeZone = [NSTimeZone defaultTimeZone];
+    scheduleAlert.repeatInterval = NSMinuteCalendarUnit;
+    scheduleAlert.soundName = @"soundeffect.wav";
+    scheduleAlert.alertBody = @"I'd like to get your attention again!";
+    [[UIApplication sharedApplication] scheduleLocalNotification:scheduleAlert];
+    
+    
 }
 
 - (IBAction)doMultiButtonAlert:(id)sender {

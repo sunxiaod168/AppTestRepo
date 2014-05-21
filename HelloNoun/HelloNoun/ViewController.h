@@ -9,9 +9,12 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+
 @property (strong, nonatomic) IBOutlet UILabel *userOutput;
 @property (strong, nonatomic) IBOutlet UITextField *userInput;
 - (IBAction)setOutput:(id)sender;
+
+
 
 
 

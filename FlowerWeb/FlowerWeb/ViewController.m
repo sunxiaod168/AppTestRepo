@@ -48,6 +48,7 @@
     [self.flowerView loadRequest:[NSURLRequest requestWithURL:imageURL]];
     [self.flowerViewDetail loadRequest:[NSURLRequest requestWithURL:detailURL]];
     self.flowerViewDetail.backgroundColor = [UIColor clearColor];
+   
     
     
 }
