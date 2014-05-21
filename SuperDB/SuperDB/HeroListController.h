@@ -16,7 +16,7 @@ enum {
     kBySecretIdentity
 };
 
-@interface HeroListController : UIViewController <UITableViewDataSource,UITabBarDelegate,NSFetchedResultsControllerDelegate,UIAlertViewDelegate>
+@interface HeroListController : UIViewController <UITableViewDataSource,UITableViewDelegate,UITabBarDelegate,NSFetchedResultsControllerDelegate,UIAlertViewDelegate>
 
 @property (strong, nonatomic) IBOutlet UITableView *heroTableView;
 @property (strong, nonatomic) IBOutlet UITabBar *heroTabBar;

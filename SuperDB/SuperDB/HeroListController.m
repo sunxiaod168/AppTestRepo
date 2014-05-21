@@ -8,6 +8,7 @@
 
 #import "HeroListController.h"
 #import "AppDelegate.h"
+#import "HeroDetailController.h"
 
 @interface HeroListController ()
 @property (nonatomic,strong,readonly) NSFetchedResultsController *fetchedResultsController;
@@ -25,8 +26,8 @@
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
-//     Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-     self.navigationItem.leftBarButtonItem = self.editButtonItem;
+    //     Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+    self.navigationItem.leftBarButtonItem = self.editButtonItem;
     
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     NSInteger selectedTab = [defaults integerForKey:kSelectedTabDefaultsKey];
@@ -44,6 +45,7 @@
         [alert show];
     }
     self.heroTableView.dataSource = self;
+    self.heroTableView.delegate = self;
     
     
     
@@ -59,14 +61,14 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-
+    
     // Return the number of sections.
     return [[self.fetchedResultsController sections] count];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-
+    
     // Return the number of rows in the section.
     id <NSFetchedResultsSectionInfo> sectionInfo = [[self.fetchedResultsController sections] objectAtIndex:section];
     return [sectionInfo numberOfObjects];
@@ -96,13 +98,19 @@
 
 
 /*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
+ // Override to support conditional editing of the table view.
+ - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
+ {
+ // Return NO if you do not want the specified item to be editable.
+ return YES;
+ }
+ */
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    NSManagedObject *selectedHero = [self.fetchedResultsController objectAtIndexPath:indexPath];
+    
+    [self performSegueWithIdentifier:@"HeroDetailSegue" sender:selectedHero];
 }
-*/
 
 
 // Override to support editing the table view.
@@ -125,36 +133,36 @@
         
     } else if (editingStyle == UITableViewCellEditingStyleInsert) {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
+    }
 }
 
 
 /*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
-{
-}
-*/
+ // Override to support rearranging the table view.
+ - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
+ {
+ }
+ */
 
 /*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
+ // Override to support conditional rearranging of the table view.
+ - (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
+ {
+ // Return NO if you do not want the item to be re-orderable.
+ return YES;
+ }
+ */
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+ {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 #pragma mark - UITabBarDelegate Methods
 
@@ -222,7 +230,7 @@
 #pragma mark - NSFetchedResultsControllerDelegate Methods
 
 - (void)controllerWillChangeContent:(NSFetchedResultsController *)controller{
-//    [self.heroTableView beginUpdates];
+    //    [self.heroTableView beginUpdates];
     
 }
 
@@ -231,7 +239,7 @@
         case NSFetchedResultsChangeInsert:
             [self.heroTableView insertSections:[NSIndexSet indexSetWithIndex:sectionIndex] withRowAnimation:UITableViewRowAnimationFade];
             break;
-            case NSFetchedResultsChangeDelete:
+        case NSFetchedResultsChangeDelete:
             [self.heroTableView deleteSections:[NSIndexSet indexSetWithIndex:sectionIndex] withRowAnimation:UITableViewRowAnimationFade];
         default:
             break;
@@ -242,7 +250,7 @@
 - (void)controller:(NSFetchedResultsController *)controller didChangeObject:(id)anObject atIndexPath:(NSIndexPath *)indexPath forChangeType:(NSFetchedResultsChangeType)type newIndexPath:(NSIndexPath *)newIndexPath{
     switch (type) {
         case NSFetchedResultsChangeInsert:
-//            [self.heroTableView insertRowsAtIndexPaths:@[newIndexPath] withRowAnimation:UITableViewRowAnimationFade];
+            //            [self.heroTableView insertRowsAtIndexPaths:@[newIndexPath] withRowAnimation:UITableViewRowAnimationFade];
             break;
         case NSFetchedResultsChangeDelete:
             [self.heroTableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
@@ -256,8 +264,8 @@
 }
 
 - (void)controllerDidChangeContent:(NSFetchedResultsController *)controller{
-//    [self.heroTableView endUpdates];
-//    [self.heroTableView reloadData];
+    //    [self.heroTableView endUpdates];
+    //    [self.heroTableView reloadData];
     
     
 }
@@ -274,16 +282,18 @@
 - (IBAction)addHero:(id)sender {
     NSManagedObjectContext *managedObjectContext = [self.fetchedResultsController managedObjectContext];
     NSEntityDescription *entity = [[self.fetchedResultsController fetchRequest] entity];
-    [NSEntityDescription insertNewObjectForEntityForName:[entity name] inManagedObjectContext:managedObjectContext];
+    NSManagedObject *newHero = [NSEntityDescription insertNewObjectForEntityForName:[entity name] inManagedObjectContext:managedObjectContext];
+    
     NSError *error = nil;
     if (![managedObjectContext save:&error]) {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Error saving entity", @"Error saving entity")
                                                         message:[NSString stringWithFormat:NSLocalizedString(@"Error was:@%,quitting.", @"Error was: @%, quitting"),[error localizedDescription]]
                                                        delegate:self
-                                                      cancelButtonTitle:NSLocalizedString(@"Aw, Nuts", @"Aw, Nuts")
-                                                      otherButtonTitles: nil];
+                                              cancelButtonTitle:NSLocalizedString(@"Aw, Nuts", @"Aw, Nuts")
+                                              otherButtonTitles: nil];
         [alert show];
     }
+    [self performSegueWithIdentifier:@"HeroDetailSegue" sender:newHero];
     
 }
 
@@ -291,6 +301,23 @@
     [super setEditing:editing animated:animated];
     self.addButton.enabled = !editing;
     [self.heroTableView setEditing:editing animated:animated];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if ([segue.identifier isEqualToString:@"HeroDetailSegue"]) {
+        if ([sender isKindOfClass:[NSManagedObject class]]) {
+            HeroDetailController *detailController = segue.destinationViewController;
+            detailController.hero = sender;
+        }else{
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Hero Detail Error", @"Hero Detail Error")
+                                                            message: NSLocalizedString(@"Hero Detail Error", @"Hero Detail Error")
+                                                           delegate:self
+                                                  cancelButtonTitle:NSLocalizedString(@"Aw, Nuts", @"Aw, Nuts")
+                                                  otherButtonTitles: nil];
+            [alert show];
+            
+        }
+    }
 }
 
 

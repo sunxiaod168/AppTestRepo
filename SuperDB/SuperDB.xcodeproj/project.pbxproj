@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		83240F881928B970003A2A88 /* tabbaricon01@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83240F861928B970003A2A88 /* tabbaricon01@2x.png */; };
 		83240F891928B970003A2A88 /* tabbaricon02@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83240F871928B970003A2A88 /* tabbaricon02@2x.png */; };
+		8373DFD7192CE5C1003313C5 /* HeroDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8373DFD6192CE5C1003313C5 /* HeroDetailController.m */; };
+		8373DFD9192CEA52003313C5 /* HeroDetailConfiguration.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8373DFD8192CEA52003313C5 /* HeroDetailConfiguration.plist */; };
 		83ACA35C192508A300FBB2F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ACA35B192508A300FBB2F7 /* Foundation.framework */; };
 		83ACA35E192508A300FBB2F7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ACA35D192508A300FBB2F7 /* CoreGraphics.framework */; };
 		83ACA360192508A300FBB2F7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ACA35F192508A300FBB2F7 /* UIKit.framework */; };
@@ -43,6 +45,9 @@
 /* Begin PBXFileReference section */
 		83240F861928B970003A2A88 /* tabbaricon01@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbaricon01@2x.png"; sourceTree = "<group>"; };
 		83240F871928B970003A2A88 /* tabbaricon02@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbaricon02@2x.png"; sourceTree = "<group>"; };
+		8373DFD5192CE5C1003313C5 /* HeroDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeroDetailController.h; sourceTree = "<group>"; };
+		8373DFD6192CE5C1003313C5 /* HeroDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeroDetailController.m; sourceTree = "<group>"; };
+		8373DFD8192CEA52003313C5 /* HeroDetailConfiguration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = HeroDetailConfiguration.plist; sourceTree = "<group>"; };
 		83ACA358192508A300FBB2F7 /* SuperDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83ACA35B192508A300FBB2F7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		83ACA35D192508A300FBB2F7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -141,6 +146,8 @@
 				83240F861928B970003A2A88 /* tabbaricon01@2x.png */,
 				83CED339192866F700F547E7 /* tabbaricon02.png */,
 				83240F871928B970003A2A88 /* tabbaricon02@2x.png */,
+				8373DFD5192CE5C1003313C5 /* HeroDetailController.h */,
+				8373DFD6192CE5C1003313C5 /* HeroDetailController.m */,
 			);
 			path = SuperDB;
 			sourceTree = "<group>";
@@ -152,6 +159,7 @@
 				83ACA366192508A300FBB2F7 /* InfoPlist.strings */,
 				83ACA369192508A300FBB2F7 /* main.m */,
 				83ACA36B192508A300FBB2F7 /* SuperDB-Prefix.pch */,
+				8373DFD8192CEA52003313C5 /* HeroDetailConfiguration.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -249,6 +257,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8373DFD9192CEA52003313C5 /* HeroDetailConfiguration.plist in Resources */,
 				83240F881928B970003A2A88 /* tabbaricon01@2x.png in Resources */,
 				83ACA39119250DA500FBB2F7 /* SuperDB.storyboard in Resources */,
 				83CED33A192866F700F547E7 /* tabbaricon01.png in Resources */,
@@ -277,6 +286,7 @@
 				83ACA371192508A400FBB2F7 /* SuperDB.xcdatamodeld in Sources */,
 				83ACA36E192508A300FBB2F7 /* AppDelegate.m in Sources */,
 				83ACA36A192508A300FBB2F7 /* main.m in Sources */,
+				8373DFD7192CE5C1003313C5 /* HeroDetailController.m in Sources */,
 				83B7FE3C1925EC7C00291CB5 /* HeroListController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
