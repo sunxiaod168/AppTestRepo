@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		83240F881928B970003A2A88 /* tabbaricon01@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83240F861928B970003A2A88 /* tabbaricon01@2x.png */; };
 		83240F891928B970003A2A88 /* tabbaricon02@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83240F871928B970003A2A88 /* tabbaricon02@2x.png */; };
+		83734B04192D9E37002197E2 /* SuperDBEditCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 83734B03192D9E37002197E2 /* SuperDBEditCell.m */; };
+		83734B07192DF60B002197E2 /* SuperDBDateCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 83734B06192DF60B002197E2 /* SuperDBDateCell.m */; };
 		8373DFD7192CE5C1003313C5 /* HeroDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8373DFD6192CE5C1003313C5 /* HeroDetailController.m */; };
 		8373DFD9192CEA52003313C5 /* HeroDetailConfiguration.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8373DFD8192CEA52003313C5 /* HeroDetailConfiguration.plist */; };
 		83ACA35C192508A300FBB2F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83ACA35B192508A300FBB2F7 /* Foundation.framework */; };
@@ -45,6 +47,10 @@
 /* Begin PBXFileReference section */
 		83240F861928B970003A2A88 /* tabbaricon01@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbaricon01@2x.png"; sourceTree = "<group>"; };
 		83240F871928B970003A2A88 /* tabbaricon02@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbaricon02@2x.png"; sourceTree = "<group>"; };
+		83734B02192D9E37002197E2 /* SuperDBEditCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperDBEditCell.h; sourceTree = "<group>"; };
+		83734B03192D9E37002197E2 /* SuperDBEditCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuperDBEditCell.m; sourceTree = "<group>"; };
+		83734B05192DF60B002197E2 /* SuperDBDateCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperDBDateCell.h; sourceTree = "<group>"; };
+		83734B06192DF60B002197E2 /* SuperDBDateCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuperDBDateCell.m; sourceTree = "<group>"; };
 		8373DFD5192CE5C1003313C5 /* HeroDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeroDetailController.h; sourceTree = "<group>"; };
 		8373DFD6192CE5C1003313C5 /* HeroDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeroDetailController.m; sourceTree = "<group>"; };
 		8373DFD8192CEA52003313C5 /* HeroDetailConfiguration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = HeroDetailConfiguration.plist; sourceTree = "<group>"; };
@@ -148,6 +154,10 @@
 				83240F871928B970003A2A88 /* tabbaricon02@2x.png */,
 				8373DFD5192CE5C1003313C5 /* HeroDetailController.h */,
 				8373DFD6192CE5C1003313C5 /* HeroDetailController.m */,
+				83734B05192DF60B002197E2 /* SuperDBDateCell.h */,
+				83734B06192DF60B002197E2 /* SuperDBDateCell.m */,
+				83734B02192D9E37002197E2 /* SuperDBEditCell.h */,
+				83734B03192D9E37002197E2 /* SuperDBEditCell.m */,
 			);
 			path = SuperDB;
 			sourceTree = "<group>";
@@ -283,7 +293,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83734B07192DF60B002197E2 /* SuperDBDateCell.m in Sources */,
 				83ACA371192508A400FBB2F7 /* SuperDB.xcdatamodeld in Sources */,
+				83734B04192D9E37002197E2 /* SuperDBEditCell.m in Sources */,
 				83ACA36E192508A300FBB2F7 /* AppDelegate.m in Sources */,
 				83ACA36A192508A300FBB2F7 /* main.m in Sources */,
 				8373DFD7192CE5C1003313C5 /* HeroDetailController.m in Sources */,

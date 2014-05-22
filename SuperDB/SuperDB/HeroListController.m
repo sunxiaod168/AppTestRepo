@@ -230,7 +230,7 @@
 #pragma mark - NSFetchedResultsControllerDelegate Methods
 
 - (void)controllerWillChangeContent:(NSFetchedResultsController *)controller{
-    //    [self.heroTableView beginUpdates];
+   [self.heroTableView beginUpdates];
     
 }
 
@@ -250,7 +250,7 @@
 - (void)controller:(NSFetchedResultsController *)controller didChangeObject:(id)anObject atIndexPath:(NSIndexPath *)indexPath forChangeType:(NSFetchedResultsChangeType)type newIndexPath:(NSIndexPath *)newIndexPath{
     switch (type) {
         case NSFetchedResultsChangeInsert:
-            //            [self.heroTableView insertRowsAtIndexPaths:@[newIndexPath] withRowAnimation:UITableViewRowAnimationFade];
+                     [self.heroTableView insertRowsAtIndexPaths:@[newIndexPath] withRowAnimation:UITableViewRowAnimationFade];
             break;
         case NSFetchedResultsChangeDelete:
             [self.heroTableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
@@ -264,8 +264,7 @@
 }
 
 - (void)controllerDidChangeContent:(NSFetchedResultsController *)controller{
-    //    [self.heroTableView endUpdates];
-    //    [self.heroTableView reloadData];
+    [self.heroTableView endUpdates];
     
     
 }

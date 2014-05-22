@@ -7,6 +7,7 @@
 //
 
 #import "HeroDetailController.h"
+#import "SuperDBEditCell.h"
 
 @interface HeroDetailController ()
 @property (strong, nonatomic) NSArray *sections;
@@ -27,13 +28,15 @@
     self = [super initWithStyle:style];
     if (self) {
         // Custom initialization
-    }
+            }
     return self;
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+   
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -64,42 +67,46 @@
 }
 
 #pragma mark - Table view data source
-/*
- 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-    return 0;
-}
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    return 0;
-}
  
- */
+//- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+//{
+//
+//    // Return the number of sections.
+//    return 2;
+//}
+
+
+//- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+//{
+//
+//    // Return the number of rows in the section.
+//    return 0;
+//}
+
+
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *cellIdentifier = @"HeroDetailCell";
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue2 reuseIdentifier:cellIdentifier];
-    }
     NSInteger sectionIndex = [indexPath section];
     NSInteger rowIndex = [indexPath row];
-    
     NSDictionary *section = [self.sections objectAtIndex:sectionIndex];
     NSArray *rows = [section objectForKey:@"rows"];
     NSDictionary *row = [rows objectAtIndex:rowIndex];
-    cell.textLabel.text = [row objectForKey:@"label"];
-    cell.detailTextLabel.text = [[self.hero valueForKey:[row objectForKey:@"key"]] description];
+    NSString *cellClassName = [row valueForKey:@"class"];
+    SuperDBEditCell *cell = [tableView dequeueReusableCellWithIdentifier:cellClassName];
     
-    // Configure the cell...
+    
+    if (cell == nil) {
+        Class cellClass = NSClassFromString(cellClassName);
+        cell = [cellClass alloc];
+        cell = [cell initWithStyle:UITableViewCellStyleValue2 reuseIdentifier:cellClassName];
+    }
+    cell.value = [self.hero valueForKey:[row objectForKey:@"key"]];
+    cell.key = [row objectForKey:@"key"];
+    cell.label.text = [row objectForKey:@"label"];
+    
+    
     
     return cell;
 }
@@ -161,6 +168,18 @@
 
 -(void)save{
     [self setEditing:NO animated:YES];
+    for (SuperDBEditCell *cell in [self.tableView visibleCells]) {
+        [self.hero setValue:cell.value forKey:cell.key];
+    }
+    NSError *error;
+    if (![self.hero.managedObjectContext save:&error]) {
+        NSLog(@"Error saving: %@", [error localizedDescription]);
+    }
+    
+
+    [self.tableView reloadData];
+    
+    
 }
 
 -(void)cancel{
